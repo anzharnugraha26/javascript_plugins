@@ -60,7 +60,7 @@ body {
 }
 
 .container .video-list::-webkit-scrollbar-thumb {
-    background: aqua;
+    background: #B3B7B7;
     border-radius: 50px;
 }
 
@@ -96,4 +96,17 @@ body {
 .container .video-list .vid .title {
     color: #333;
     font-size: 17px;
+}
+
+@media(max-width:991px) {
+    .container {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
